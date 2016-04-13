@@ -39,15 +39,20 @@
             @endforeach
         </div>
     </section>
-    <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal fade" tabindex="-1" role="dialog" id="edit-modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Edit POst</h4>
+                    <h4 class="modal-title">Edit Post</h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="post-body">Edit the post</label>
+                            <textarea class="form-control" name="post-body" id="post-body" rows="5"></textarea>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
