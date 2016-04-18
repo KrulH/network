@@ -64,3 +64,7 @@ Route::get('/userimage/{filename}', [
     'as' => 'account.image'
 ]);
 
+Route::post('/like', [
+    'uses' => 'PostController@postLikePost',
+    'as' => 'like'
+]);
