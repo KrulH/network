@@ -21,3 +21,9 @@ $('#modal-save').on('click', function(){
             $('#edit-modal').modal('hide');
         });
 });
+
+
+$('.like').on('click', function(event){
+    var isLike = event.target.previousElementSibling == null;
+    console.log(isLike);
+});
